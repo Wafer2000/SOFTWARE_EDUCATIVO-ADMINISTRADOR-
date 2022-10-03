@@ -1,0 +1,604 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-text><h5><strong>EXAMEN</strong></h5></ion-text>
+      <ion-buttons slot="start">
+          <ion-button (click)="openmenu()">
+              <ion-icon color="primary" slot="icon-only" name="menu-sharp"></ion-icon>
+          </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngFor="let usuariosins of usuario">
+  <div *ngIf="usuariosins.completado1==false && usuariosins.completado2==null && usuariosins.completado3==null">
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta1Modulo1 of preguntas1Modulo1">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp1Modulo1">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta1Modulo1.num}}. {{pregunta1Modulo1.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta1Modulo1></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta2Modulo1 of preguntas2Modulo1">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp2Modulo1">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta2Modulo1.num}}. {{pregunta2Modulo1.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta2Modulo1></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta3Modulo1 of preguntas3Modulo1">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp3Modulo1">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta3Modulo1.num}}. {{pregunta3Modulo1.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta3Modulo1></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta4Modulo1 of preguntas4Modulo1">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp4Modulo1">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta4Modulo1.num}}. {{pregunta4Modulo1.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta4Modulo1></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta5Modulo1 of preguntas5Modulo1">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp5Modulo1">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta5Modulo1.num}}. {{pregunta5Modulo1.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta5Modulo1></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta6Modulo1 of preguntas6Modulo1">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp6Modulo1">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta6Modulo1.num}}. {{pregunta6Modulo1.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta6Modulo1></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta7Modulo1 of preguntas7Modulo1">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp7Modulo1">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta7Modulo1.num}}. {{pregunta7Modulo1.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta7Modulo1></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta8Modulo1 of preguntas8Modulo1">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp8Modulo1">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta8Modulo1.num}}. {{pregunta8Modulo1.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta8Modulo1></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta9Modulo1 of preguntas9Modulo1">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp9Modulo1">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta9Modulo1.num}}. {{pregunta9Modulo1.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta9Modulo1></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta10Modulo1 of preguntas10Modulo1">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp10Modulo1">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta10Modulo1.num}}. {{pregunta10Modulo1.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta10Modulo1></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-button (click)="GuardarRespuestasModulo1(usuariosins, resp1Modulo1, resp2Modulo1, resp3Modulo1, resp4Modulo1, resp5Modulo1, resp6Modulo1, resp7Modulo1, resp8Modulo1, resp9Modulo1, resp10Modulo1)" shape="round">
+      <ion-icon slot="icon-only" name="save"></ion-icon>
+      Guardar
+    </ion-button>
+  </div>
+  <div *ngIf="usuariosins.completado1">
+    <ion-row style="background: #e4e4e4;">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-card-content>
+              YA HAS COMPLETADO EL EXAMEN DEL PRIMER MODULO
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+  </div>  
+  <div *ngIf="usuariosins.completado2==false && usuariosins.completado1==true && usuariosins.completado3==null">
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta1Modulo2 of preguntas1Modulo2">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp1Modulo2">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta1Modulo2.num}}. {{pregunta1Modulo2.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta1Modulo2></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta2Modulo2 of preguntas2Modulo2">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp2Modulo2">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta2Modulo2.num}}. {{pregunta2Modulo2.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta2Modulo2></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta3Modulo2 of preguntas3Modulo2">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp3Modulo2">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta3Modulo2.num}}. {{pregunta3Modulo2.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta3Modulo2></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta4Modulo2 of preguntas4Modulo2">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp4Modulo2">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta4Modulo2.num}}. {{pregunta4Modulo2.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta4Modulo2></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta5Modulo2 of preguntas5Modulo2">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp5Modulo2">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta5Modulo2.num}}. {{pregunta5Modulo2.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta5Modulo2></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta6Modulo2 of preguntas6Modulo2">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp6Modulo2">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta6Modulo2.num}}. {{pregunta6Modulo2.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta6Modulo2></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta7Modulo2 of preguntas7Modulo2">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp7Modulo2">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta7Modulo2.num}}. {{pregunta7Modulo2.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta7Modulo2></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta8Modulo2 of preguntas8Modulo2">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp8Modulo2">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta8Modulo2.num}}. {{pregunta8Modulo2.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta8Modulo2></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta9Modulo2 of preguntas9Modulo2">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp9Modulo2">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta9Modulo2.num}}. {{pregunta9Modulo2.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta9Modulo2></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta10Modulo2 of preguntas10Modulo2">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp10Modulo2">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta10Modulo2.num}}. {{pregunta10Modulo2.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta10Modulo2></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-button (click)="GuardarRespuestasModulo2(usuariosins, resp1Modulo2, resp2Modulo2, resp3Modulo2, resp4Modulo2, resp5Modulo2, resp6Modulo2, resp7Modulo2, resp8Modulo2, resp9Modulo2, resp10Modulo2)" shape="round">
+      <ion-icon slot="icon-only" name="save"></ion-icon>
+      Guardar
+    </ion-button>
+  </div>
+  <div *ngIf="usuariosins.completado2">
+    <ion-row style="background: #e4e4e4;">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-card-content>
+              YA HAS COMPLETADO EL EXAMEN DEL SEGUNDO MODULO
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+  </div>
+  <div *ngIf="usuariosins.completado3==false && usuariosins.completado1==true && usuariosins.completado2==true">
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta1Modulo3 of preguntas1Modulo3">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp1Modulo3">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta1Modulo3.num}}. {{pregunta1Modulo3.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta1Modulo3></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta2Modulo3 of preguntas2Modulo3">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp2Modulo3">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta2Modulo3.num}}. {{pregunta2Modulo3.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta2Modulo3></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta3Modulo3 of preguntas3Modulo3">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp3Modulo3">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta3Modulo3.num}}. {{pregunta3Modulo3.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta3Modulo3></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta4Modulo3 of preguntas4Modulo3">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp4Modulo3">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta4Modulo3.num}}. {{pregunta4Modulo3.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta4Modulo3></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta5Modulo3 of preguntas5Modulo3">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp5Modulo3">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta5Modulo3.num}}. {{pregunta5Modulo3.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta5Modulo3></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta6Modulo3 of preguntas6Modulo3">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp6Modulo3">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta6Modulo3.num}}. {{pregunta6Modulo3.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta6Modulo3></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta7Modulo3 of preguntas7Modulo3">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp7Modulo3">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta7Modulo3.num}}. {{pregunta7Modulo3.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta7Modulo3></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta8Modulo3 of preguntas8Modulo3">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp8Modulo3">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta8Modulo3.num}}. {{pregunta8Modulo3.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta8Modulo3></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta9Modulo3 of preguntas9Modulo3">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp9Modulo3">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta9Modulo3.num}}. {{pregunta9Modulo3.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta9Modulo3></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row style="background: #e4e4e4;" *ngFor="let pregunta10Modulo3 of preguntas10Modulo3">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-list radio-group>
+              <ion-radio-group allow-empty-selection="true" [(ngModel)]="resp10Modulo3">
+                <ion-list-header>
+                  <ion-text>
+                    <h4>
+                      {{pregunta10Modulo3.num}}. {{pregunta10Modulo3.preg}}
+                    </h4>
+                  </ion-text>
+                </ion-list-header>
+                <app-opexamodulo [preguntas]=pregunta10Modulo3></app-opexamodulo>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-button (click)="GuardarRespuestasModulo3(usuariosins, resp1Modulo3, resp2Modulo3, resp3Modulo3, resp4Modulo3, resp5Modulo3, resp6Modulo3, resp7Modulo3, resp8Modulo3, resp9Modulo3, resp10Modulo3)" shape="round">
+      <ion-icon slot="icon-only" name="save"></ion-icon>
+      Guardar
+    </ion-button>
+  </div>
+  <div *ngIf="usuariosins.completado3">
+    <ion-row style="background: #e4e4e4;">
+        <ion-col size="12" size-md>
+          <ion-card>
+            <ion-card-content>
+              YA HAS COMPLETADO EL EXAMEN DEL TERCER MODULO
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

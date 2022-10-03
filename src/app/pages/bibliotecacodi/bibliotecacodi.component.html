@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-text><h5><strong>CODIGOS</strong></h5></ion-text>
+      <ion-buttons slot="start">
+          <ion-button (click)="openmenu()">
+              <ion-icon color="primary" slot="icon-only" name="menu-sharp"></ion-icon>
+          </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row style="background: #e4e4e4;" *ngFor="let nuevos of codigos">
+      <ion-col size="12" size-md>
+          <ion-card>
+              <div style="margin: 20px   20px;">
+                  <ion-text class="ion-text-center"><h3><strong>
+                      {{nuevos.titulo}}
+                  </strong></h3></ion-text>
+              </div>
+              <div style="margin: 20px   20px;">
+                  <ion-text><h4>
+                      {{nuevos.caracte}}
+                  </h4></ion-text>
+              </div>
+              <div style="margin: 20px   20px;">
+                  <ion-text><h6>
+                      {{nuevos.contenido}}
+                  </h6></ion-text>
+              </div>
+              <ion-toolbar style="margin: 0px   5px;">
+                  <ion-text><h6><strong>
+                      <div style="margin: 5px;">
+                          <ion-icon name="calendar"></ion-icon>
+                          {{nuevos.fecha}} 
+                      </div> 
+                      <div style="margin: 5px;">
+                          <ion-icon name="time"></ion-icon>
+                          {{nuevos.hora}}
+                      </div>
+                  </strong></h6></ion-text>
+              </ion-toolbar>
+          </ion-card>
+      </ion-col>
+  </ion-row>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "ADMINISTRADOR",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

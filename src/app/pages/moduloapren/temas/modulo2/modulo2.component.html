@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Temas</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="cerrar()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-row style="background: #e4e4e4;" *ngFor="let nuevos of temas">
+        <ion-col size="12" size-md>
+            <ion-card>
+                <div style="margin: 20px   20px;">
+                    <ion-text class="ion-text-center"><h4><strong>
+                        {{nuevos.titulo}}
+                    </strong></h4></ion-text>
+                </div>
+                <div style="margin: 20px   20px;">
+                    <ion-text><h6>
+                        {{nuevos.contenido}}
+                    </h6></ion-text>
+                </div>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+</ion-content>
