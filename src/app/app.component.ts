@@ -12,7 +12,7 @@ import { FirestoreService } from './services/firestore.service';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  
+
   registro: Usuarios = {
     nombres: '',
     apellidos: '',
@@ -93,7 +93,7 @@ export class AppComponent {
   async getUid(){
     this.firebaseauthService.stateAuth().subscribe( res =>{
       if (res !== null) {
-        if (res.uid === 'xmPnhsDaBaad8oj6hMXrQaBgHxw1'){
+        if (res.uid === '6V40qYJifneL0Ot3DkaNC4Rde9J3'){
           this.admin = true;
           console.log('Bienvenido Administrador');
         }
